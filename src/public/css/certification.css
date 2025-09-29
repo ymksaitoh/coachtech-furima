@@ -1,0 +1,47 @@
+.certification-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.certification-form__message {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+
+.certification-form__btn input[type="submit"]{
+    display: inline-block;
+    padding: 8px 32px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: #D9D9D9;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 48px;
+    text-decoration: none;
+}
+
+.certification-form__mail input {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: dodgerblue;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .mypage-form__form {
+        width: 80vw;
+    }
+}

@@ -1,0 +1,238 @@
+.detail-form {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px;
+    background-color: white;
+    margin-top: 100px;
+}
+
+.detail-form__left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-form__img img {
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    background-color: dimgray;
+}
+
+.detail-form__right {
+    flex: 1;
+    font-family: Inter, sans-serif;
+}
+
+.detail-form__item-name {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.detail-form__brand-name {
+    font-size: 20px;
+    color: dimgray;
+    margin-bottom: 8px;
+}
+
+.detail-form__price {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.detail-form__meta {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 8px;
+}
+
+.detail-form__favorite-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.detail-form__favorite-btn .icon {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    display: block;
+}
+
+.detail-form__favorite-btn.favorited .icon {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    display: block;
+}
+
+.detail-form__favorite-btn .count {
+    font-size: 8px;
+    color: black;
+    margin-top: 2px;
+}
+
+.detail-form__comment-count {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detail-form__comment-count .icon {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    display: block;
+}
+
+.detail-form__comment-count .count {
+    font-size: 8px;
+    color: black;
+    margin-top: 2px;
+    text-align: center;
+}
+
+.detail-form__buy-btn {
+    display: block;
+    width: 570px;
+    height: 56px;
+    padding: 10px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 36px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.detail-form__title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.detail-form__group {
+    margin-bottom: 24px;
+}
+
+.detail-form__label {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.detail-form__category,
+.detail-form__condition,
+.detail-form__detail {
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.detail-form__category-item {
+    display: inline-block;
+    background-color: dimgray;
+    color: black;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 4px 6px 4px 0;
+    white-space: nowrap;
+}
+
+.detail-form__comment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 12px;
+}
+
+.detail-form__comment-user-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.detail-form__comment-list img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: dimgray;
+}
+
+.detail-form__comment-text {
+    font-size: 20px;
+    line-height: 1.4;
+    padding: 6px 10px;
+}
+
+.detail-form__comment-form {
+    margin-top: 16px;
+}
+
+.detail-form__comment-input {
+    width: 570px;
+    height: 246px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid dimgray;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    resize: vertical;
+}
+
+.detail-form__comment-btn {
+    display: block;
+    width: 570px;
+    height: 56px;
+    padding: 10px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.detail-form__comment-error {
+    color: red;
+}
+
+.detail-form__user-img-placeholder {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: dimgray;
+}
+
+.detail-form__comment-user-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+@media (max-width: 1200px) {
+    .detail-form {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    .detail-form__left,
+    .detail-form__right {
+        flex: 1 1 100%;
+    }
+}

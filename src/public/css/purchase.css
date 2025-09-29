@@ -1,0 +1,170 @@
+.content {
+    background-color: white;
+}
+
+.purchase-form {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    width: 90%;
+    margin: 200px auto 40px auto;
+    gap: 40px;
+}
+
+.purchase-form__left {
+    flex: 2;
+}
+
+.purchase-form__right {
+    flex: 1;
+}
+
+.purchase-form__card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid dimgray;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.purchase-form__card img {
+    width: 178px;
+    height: 178px;
+    object-fit: cover;
+    background-color: dimgray;
+}
+
+.purchase-form__item-name {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.purchase-form__item-price {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.purchase-form__group {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid dimgray;
+    padding: 12px 0;
+    gap: 12px;
+}
+
+.purchase-form__label {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.4;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.purchase-form__select,
+.purchase-form__address-content {
+    width: 265px;
+    height: 31px;
+    margin-left: 48px;
+}
+
+.purchase-form__group.purchase-form__address {
+    padding: 12px 0;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 12px;
+    border-bottom: 1px solid dimgray;
+    margin-left: 0;
+}
+
+.purchase-form__address-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.purchase-form__update-link,
+.purchase-form__update-link a:visited {
+    color: #0073cc;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.purchase-form__update-link:hover {
+    text-decoration: underline;
+}
+
+.purchase-form__address-detail {
+    margin-left: 48px;
+}
+
+.purchase-form__address-detail p {
+    margin: 2px 0;
+    font-size: 20px;
+}
+
+.purchase-form__address-header .purchase-form__label {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.purchase-form__group-payment {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid dimgray;
+    margin-bottom: 20px;
+}
+
+.purchase-form__group-payment tr {
+    border-bottom: 1px solid dimgray ;
+}
+
+.purchase-form__group-payment th,
+.purchase-form__group-payment td {
+    padding: 12px;
+    border-bottom: none;
+    text-align: left;
+}
+
+.purchase-form__group-payment tr:last-child {
+    border-bottom: none;
+}
+
+.purchase-form__btn {
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+    padding: 12px 0;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 100%;
+    height: 60px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.purchase-form__action {
+    width: 100%;
+}
+
+@media screen and(min-width: 1200px) {
+    .purchase-form {
+        flex-direction: column;
+    }
+    .purchase-form__left,
+    .purchase-form__right {
+        flex: unset;
+        width: 100%;
+    }
+}
+
+
+
+

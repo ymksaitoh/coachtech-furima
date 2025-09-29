@@ -1,0 +1,158 @@
+.content {
+    background-color: white;
+}
+
+.index-content {
+    display: block;
+    align-items: unset;
+    justify-content: unset;
+    height: auto;
+    width: 100%;
+}
+
+.index-content--top {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.index-form__tab-wrapper {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.index-form__tab {
+    display: flex;
+    align-self: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid dimgray;
+    padding: 50px 20px 5px 20px;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 0px;
+    gap: 40px;
+}
+
+.index-form__tab a {
+    margin: 0 20px 0 130px;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.index-form__tab a.active {
+    color: orangered;
+}
+
+.index-form__tab-link {
+    margin-right: 20px;
+    margin-left: 130px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: default;
+}
+.index-form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin: 20px auto 0 auto;
+}
+
+.index-form__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    border-radius: 4px;;
+    transition: transform 0.2s;
+    height: 320px;
+    box-sizing: border-box;
+
+    background-color: white;
+}
+
+.index-form__card:hover {
+    transform: scale(1.03);
+}
+
+.index-form__card img {
+    width: 290px;
+    height: 290px;
+    object-fit: cover;
+    margin-bottom: 10px;
+
+    background-color: dimgray;
+}
+
+.index-form__name-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 290px;
+    gap: 10px;
+    margin-top: 0;
+}
+
+.index-form__name {
+    margin: 0;
+    height: 30px;
+    font-size: 25px;
+    color: black;
+}
+
+.index-form__sold-badge {
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1540px) {
+    .index-form {
+        max-width: 1540px;
+        gap: 20px;
+    }
+    .index-form__tab a {
+        margin-left: 120px;
+        margin-right: 20px;
+    }
+    .index-form__card {
+        width: 290px;
+        height: 320px;
+    }
+    .index-form__card img {
+        width: 290px;
+        height: 290px;
+    }
+    .index-form__name-wrapper {
+        width: 290px;
+        gap: 10px;
+    }
+}
+
+/* タブレットや小さい画面用 */
+@media screen and (max-width: 900px) {
+    .index-form__tab {
+        padding: 20px 10px 5px 10px;
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .index-form__tab a {
+        margin: 0 10px;
+        font-size: 18px;
+    }
+}

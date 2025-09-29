@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter' Arial, sans-serif;
+}
+
+textarea::placeholder,
+input::placeholder {
+    color: dimgray;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0 ;
+    width: 100vw;
+    height: 80px;
+    background-color: black;
+    padding-left: 64px;
+}
+
+.app {
+    width: 100%;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100vh;
+    padding-top: 200px;
+    background-color: white;
+}
+
+.content__heading {
+    text-align: center;
+    font-weight: 100;
+    font-size: 32px;
+}
+
+.btn {
+    display: block;
+    padding: 8px 32px;
+    border: none;
+    background-color: orangered;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}

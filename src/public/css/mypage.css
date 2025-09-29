@@ -1,0 +1,140 @@
+.mypage-form.content {
+    display: block;
+    align-items: unset;
+    justify-content: unset;
+    height: auto;
+    width: 100%;
+}
+
+.mypage-form {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.mypage-form__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    padding: 16px 32px;
+    margin-bottom: 60px;
+}
+
+.mypage-form__user-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: dimgray;
+    margin: 0;
+}
+
+.mypage-form__user-img-placeholder {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: dimgray;
+    margin: 0;
+}
+
+.mypage-form__user_name {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    margin-right: 300px;
+}
+
+.mypage-form__btn {
+    width: 310px;
+    height: 59px;
+    border: 2px solid orangered;
+    background-color: white;
+    color: orangered;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mypage-form__tab {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 32px;
+    margin-top: 16px;
+    margin-left: 129px;
+}
+
+.mypage-form__tab a {
+    margin-right: 32px;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+.mypage-form__tab a.active {
+    border-bottom: 3px solid orangered;
+}
+
+.mypage-form__underline {
+    width: calc(100% + 64px);
+    margin-left: -32px;
+    border-bottom: 1px solid dimgray;
+}
+
+.mypage-form__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    padding: 16px 32px 32px 32px;
+}
+
+.mypage-form__card {
+    flex: 1 0 23%;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: white;
+    min-width: 250px;
+}
+
+.mypage-form__card:hover { transform: scale(1.03); }
+.mypage-form__card img {
+    width: 290px;
+    height: 290px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    background-color: dimgray;
+}
+
+.mypage-form__card p {
+    margin-top: auto;
+    height: 30px;
+    width: 290px;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}
+
+.mypage-form__sold-badge {
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+@media screen and (max-width: 1200px) {
+    .mypage-form__card {
+        flex: 1 0 46%;
+    }
+}
